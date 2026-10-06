@@ -1,0 +1,37 @@
+Package: treedataR
+Title: Read and Write 'TreeData' Lineage Tracing Files
+Version: 0.0.1
+Authors@R:
+    person("William", "Colgan", , "wcolgan@mit.edu", role = c("aut", "cre"))
+Description: Read and write the '.h5td' (HDF5) and '.zarr' files produced by
+    the Python 'treedata' package. Files are loaded as
+    'TreeSummarizedExperiment' objects, with trees represented as
+    'tidytree::treedata' objects that keep internal-node annotations such as
+    ancestral character states.
+URL: https://github.com/YosefLab/treedataR
+BugReports: https://github.com/YosefLab/treedataR/issues
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.5.0)
+Imports:
+    anndataR (>= 1.3.2),
+    jsonlite,
+    methods,
+    rhdf5,
+    S4Vectors,
+    SingleCellExperiment,
+    SummarizedExperiment,
+    tibble,
+    tidytree,
+    TreeSummarizedExperiment
+Suggests:
+    ape,
+    Rarr,
+    withr,
+    testthat (>= 3.0.0)
+Remotes:
+    scverse/anndataR
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0

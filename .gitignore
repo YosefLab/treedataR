@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+*.Rcheck
+treedataR_*.tar.gz
+__pycache__/
+
+# macOS AppleDouble files
+._*
